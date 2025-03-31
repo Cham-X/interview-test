@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Incomplete from './pages/DigitalAddressCertificateReport/Incomplete';
-import Verified from './pages/DigitalAddressCertificateReport/Verified';
-import Failed from './pages/DigitalAddressCertificateReport/Failed';
+import IncompleteDigitalAddressVerificationReport from './pages/IncompleteDigitalAddressVerificationReport';
+import VerifiedDigitalAddressVerificationeport from './pages/VerifiedDigitalAddressVerificationeport';
+import FailedDigitalAddressVerificationReport from './pages/FailedDigitalAddressVerificationReport';
 
 function App() {
 
@@ -9,9 +9,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Incomplete />} />
-        <Route path="/verified" element={<Verified />} />
-        <Route path="/failed" element={<Failed />} />
+        <Route path="/" element={<IncompleteDigitalAddressVerificationReport />} />
+        <Route path="/verified" element={<VerifiedDigitalAddressVerificationeport />} />
+        <Route path="/failed" element={<FailedDigitalAddressVerificationReport />} />
       </Routes>
     </Router>
   )
