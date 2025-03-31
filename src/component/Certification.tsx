@@ -1,4 +1,3 @@
-import React from 'react'
 import stamp from "../assets/stamp.svg"
 
 
